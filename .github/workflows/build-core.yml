@@ -205,8 +205,36 @@ jobs:
           pnpm canvas:a2ui:bundle
           
           # 3b: tsdown 主构建（核心，不含 tsc 类型检查）
+          # 上游 main 已将 tsdown-build/build-stamp 从 .mjs 迁移到 .mts；稳定 tag 仍可能保留 .mjs。
+          run_optional_script() {
+            local base="$1"
+            local required="${2:-false}"
+            if [ -f "${base}.mts" ]; then
+              node --import tsx "${base}.mts"
+            elif [ -f "${base}.mjs" ]; then
+              node "${base}.mjs"
+            elif [ "$required" = "true" ]; then
+              echo "❌ 缺少必需脚本: ${base}.mts / ${base}.mjs"
+              return 1
+            else
+              echo "⏭️ 跳过不存在的脚本: ${base}.mts / ${base}.mjs"
+            fi
+          }
+
+          run_package_script_if_present() {
+            local script_name="$1"
+            if node -e "const s=require('./package.json').scripts||{}; process.exit(s[process.argv[1]] ? 0 : 1)" "$script_name"; then
+              pnpm "$script_name"
+            else
+              echo "⏭️ 跳过不存在的 package script: $script_name"
+            fi
+          }
+
           echo "📦 [3b] tsdown 主构建..."
-          node scripts/tsdown-build.mjs
+          run_optional_script scripts/tsdown-build true
+          if [ -f scripts/check-cli-bootstrap-imports.mts ]; then
+            node --import tsx scripts/check-cli-bootstrap-imports.mts
+          fi
           
           # 3c: 运行时后处理（复制 plugin-sdk alias + 插件 metadata + 渠道目录 + 运行时依赖）
           echo "📦 [3c] runtime-postbuild（含 openclaw.plugin.json 复制）..."
@@ -214,8 +242,10 @@ jobs:
           
           # 3c2: 构建戳记
           echo "📦 [3c2] build-stamp..."
-          node scripts/build-stamp.mjs || true
-          
+          run_optional_script scripts/build-stamp false || true
+          run_optional_script scripts/runtime-postbuild-stamp false || true
+          run_package_script_if_present plugins:assets:build
+          run_package_script_if_present plugins:assets:copy
           # 3d: 生成类型声明（上游可能有 TS 错误，允许失败）
           echo "📦 [3d] 生成类型声明（允许失败）..."
           pnpm build:plugin-sdk:dts || echo "⚠️ 类型声明生成失败（上游 TS 错误，不影响运行）"
