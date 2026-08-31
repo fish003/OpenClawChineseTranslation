@@ -2,7 +2,6 @@
   "file": "src/cli/program/subcli-descriptors.ts",
   "description": "子 CLI 命令描述符 — --help 子命令列表",
   "replacements": {
-    "description: \"Manage exec approvals (gateway or node host)\"": "description: \"管理执行审批（网关或节点主机）\"",
     "description: \"Run and manage the headless node host service\"": "description: \"运行和管理无头节点主机服务\"",
     "description: \"Open a terminal UI connected to the Gateway\"": "description: \"打开连接到网关的终端界面\"",
     "description: \"Open a local terminal UI (alias for tui --local)\"": "description: \"打开本地终端界面（tui --local 的别名）\"",
@@ -25,7 +24,6 @@
     "description: \"Model discovery, scanning, and configuration\"": "description: \"模型发现、扫描和配置\"",
     "description: \"Manage gateway-owned nodes (pairing, status, invoke, and media)\"": "description: \"管理网关拥有的节点（配对、状态、调用和媒体）\"",
     "description: \"Manage sandbox containers (Docker-based agent isolation)\"": "description: \"管理沙箱容器（基于 Docker 的代理隔离）\"",
-    "description: \"Manage cron jobs (via Gateway)\"": "description: \"管理 cron 任务（通过网关）\"",
     "description: \"Manage OpenClaw plugins and extensions\"": "description: \"管理 OpenClaw 插件和扩展\"",
     "description: \"Manage connected chat channels and accounts\"": "description: \"管理已连接聊天渠道和账号\"",
     "description: \"Audit local config and state for common security foot-guns\"": "description: \"审计本地配置和状态中的常见安全隐患\"",

@@ -1,5 +1,5 @@
 {
-  "file": "src/commands/status-all/report-sections.ts",
+  "file": "src/commands/status.command-report.ts",
   "description": "状态命令 - 报告各区块标题",
   "replacements": {
     "title: \"Overview\",": "title: \"概览\",",

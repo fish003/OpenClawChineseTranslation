@@ -9,7 +9,6 @@
     ".option(\"--password <password>\", \"Password for auth mode=password\")": ".option(\"--password <password>\", \"auth mode=password 时的密码\")",
     ".option(\"--password-file <path>\", \"Read gateway password from file\")": ".option(\"--password-file <path>\", \"从文件读取网关密码\")",
     "`Tailscale exposure mode (${formatModeChoices(GATEWAY_TAILSCALE_MODES)})`": "`Tailscale 暴露模式（${formatModeChoices(GATEWAY_TAILSCALE_MODES)}）`",
-    "\"Reset Tailscale serve/funnel configuration on shutdown\"": "\"关闭时重置 Tailscale serve/funnel 配置\"",
     "\"Allow gateway start without enforcing gateway.mode=local in config (does not repair config)\"": "\"允许网关启动而不强制配置中的 gateway.mode=local（不修复配置）\"",
     ".option(\"--dev\", \"Create a dev config + workspace if missing (no BOOTSTRAP.md)\", false)": ".option(\"--dev\", \"如缺失则创建开发配置和工作区（不含 BOOTSTRAP.md）\", false)",
     "\"Reset dev config + credentials + sessions + workspace (requires --dev)\"": "\"重置开发配置、凭证、会话和工作区（需要 --dev）\"",

@@ -14,7 +14,6 @@
     "note(\"Gateway token configured.\", \"Gateway auth\")": "note(\"网关令牌已配置。\", \"网关认证\")",
     "note(legacyState.preview.join(\"\\n\"), \"Legacy state detected\")": "note(legacyState.preview.join(\"\\n\"), \"检测到旧版状态\")",
     "note(migrated.changes.join(\"\\n\"), \"Doctor changes\")": "note(migrated.changes.join(\"\\n\"), \"诊断更改\")",
-    "note(migrated.warnings.join(\"\\n\"), \"Doctor warnings\")": "note(migrated.warnings.join(\"\\n\"), \"诊断警告\")",
-    "note(warnings.join(\"\\n\"), \"Hooks\")": "note(warnings.join(\"\\n\"), \"钩子\")"
+    "note(migrated.warnings.join(\"\\n\"), \"Doctor warnings\")": "note(migrated.warnings.join(\"\\n\"), \"诊断警告\")"
   }
 }

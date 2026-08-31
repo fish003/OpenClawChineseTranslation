@@ -18,7 +18,6 @@
     ".description(\"Uninstall the Gateway service (launchd/systemd/schtasks)\")": ".description(\"卸载网关服务（launchd/systemd/schtasks）\")",
     ".description(\"Start the Gateway service (launchd/systemd/schtasks)\")": ".description(\"启动网关服务（launchd/systemd/schtasks）\")",
     ".description(\"Stop the Gateway service (launchd/systemd/schtasks)\")": ".description(\"停止网关服务（launchd/systemd/schtasks）\")",
-    ".description(\"Restart the Gateway service (launchd/systemd/schtasks)\")": ".description(\"重启网关服务（launchd/systemd/schtasks）\")",
-    ".option(\"--runtime <runtime>\", \"Daemon runtime (node). Default: node\")": ".option(\"--runtime <runtime>\", \"守护进程运行时（node）。默认：node\")"
+    ".description(\"Restart the Gateway service (launchd/systemd/schtasks)\")": ".description(\"重启网关服务（launchd/systemd/schtasks）\")"
   }
 }
