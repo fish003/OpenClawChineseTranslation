@@ -9,6 +9,10 @@ test('稳定版发布清单固定内部运行时依赖版本', () => {
     name: 'openclaw',
     version: '2026.7.1',
     description: 'OpenClaw',
+    repository: {
+      type: 'git',
+      url: 'git+https://github.com/openclaw/openclaw.git',
+    },
     dependencies: {
       '@openclaw/ai': 'workspace:*',
       chalk: '5.6.2',
@@ -23,6 +27,10 @@ test('稳定版发布清单固定内部运行时依赖版本', () => {
 
   assert.equal(prepared.name, '@qingchencloud/openclaw-zh')
   assert.equal(prepared.version, '2026.7.1-zh.2')
+  assert.deepEqual(prepared.repository, {
+    type: 'git',
+    url: 'https://github.com/1186258278/OpenClawChineseTranslation',
+  })
   assert.equal(prepared.dependencies['@openclaw/ai'], '2026.7.1')
   assert.equal(source.dependencies['@openclaw/ai'], 'workspace:*')
 })
@@ -69,4 +77,7 @@ test('稳定版工作流从汉化版本反推上游版本而不是跟随 latest'
   assert.match(workflow, /UPSTREAM_VERSION="\$\{RELEASE_VERSION%%-zh\.\*\}"/)
   assert.match(workflow, /npm view "openclaw@\$\{UPSTREAM_VERSION\}" version/)
   assert.doesNotMatch(workflow, /registry\.npmjs\.org\/openclaw\/latest/)
+  assert.match(workflow, /id-token:\s*write/)
+  assert.match(workflow, /npm install --global npm@11/)
+  assert.doesNotMatch(workflow, /NODE_AUTH_TOKEN|secrets\.NPM_TOKEN/)
 })

@@ -35,6 +35,7 @@ env:
 permissions:
   contents: write
   packages: write
+  id-token: write
 
 jobs:
   # ==================== 准备版本信息 ====================
@@ -108,6 +109,11 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           registry-url: 'https://registry.npmjs.org'
 
+      - name: 设置支持 Trusted Publishing 的 npm CLI
+        run: |
+          npm install --global npm@11
+          npm --version
+
       - name: 验证 npm 安装包
         working-directory: openclaw
         run: |
@@ -124,8 +130,6 @@ jobs:
         # 使用 --ignore-scripts 跳过 prepack 脚本，因为代码已在 build job 中构建完成
         # 否则 prepack 会触发重新构建，覆盖掉注入的功能面板
         run: npm publish --access public --tag latest --ignore-scripts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: 同步 npmmirror 镜像源
         run: |
