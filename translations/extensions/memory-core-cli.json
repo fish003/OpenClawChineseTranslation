@@ -31,6 +31,7 @@
     "\"Search query\"": "\"搜索查询\"",
     "\"Search query (alternative to positional argument)\"": "\"搜索查询（位置参数的替代写法）\"",
     "\"Max results\"": "\"最大结果数\"",
-    "\"Minimum score\"": "\"最低分数\""
+    "\"Minimum score\"": "\"最低分数\"",
+    "\"Agent id (default: all configured agents)\"": "\"代理 ID（默认：所有已配置代理）\""
   }
 }

@@ -2,9 +2,6 @@
   "file": "src/auto-reply/commands-registry.shared.ts",
   "description": "聊天命令注册表 - 新增命令描述翻译",
   "replacements": {
-    "\"Manage session-level settings (for example /session idle).\"": "\"管理会话级设置（例如 /session idle）。\"",
-    "\"Bind this thread (Discord) or topic/conversation (Telegram) to a session target.\"": "\"将此线程（Discord）或话题/对话（Telegram）绑定到会话目标。\"",
-    "\"Remove the current thread (Discord) or topic/conversation (Telegram) binding.\"": "\"移除当前线程（Discord）或话题/对话（Telegram）绑定。\"",
     "\"List thread-bound agents for this session.\"": "\"列出此会话的线程绑定代理。\"",
     "\"Duration (24h, 90m) or off\"": "\"时长（24h、90m）或 off\"",
     "\"Show available commands.\"": "\"显示可用命令。\"",
@@ -18,6 +15,20 @@
     "\"Toggle fast mode.\"": "\"切换快速模式。\"",
     "\"Export a JSONL trajectory bundle for the active session.\"": "\"为当前会话导出 JSONL 轨迹包。\"",
     "\"Output directory (default: workspace)\"": "\"输出目录（默认：工作区）\"",
-    "\"List model providers/models.\"": "\"列出模型提供商/模型。\""
+    "\"List model providers/models.\"": "\"列出模型提供商/模型。\"",
+    "\"Manage conversation bindings and session lifecycle settings.\"": "\"管理对话绑定和会话生命周期设置。\"",
+    "\"Show your sender id.\"": "\"显示你的发送者 ID。\"",
+    "\"Ask a side question without changing future session context.\"": "\"提出旁路问题且不改变后续会话上下文。\"",
+    "\"Inspect subagent runs for this session.\"": "\"检查此会话的子代理运行。\"",
+    "\"Run id, index, or session key\"": "\"运行 ID、序号或会话键\"",
+    "\"Additional input (limit/message)\"": "\"附加输入（limit/message）\"",
+    "\"Manage ACP sessions and runtime options.\"": "\"管理 ACP 会话和运行时选项。\"",
+    "\"Action to run\"": "\"要运行的操作\"",
+    "\"Action arguments\"": "\"操作参数\"",
+    "\"Stop the current run.\"": "\"停止当前运行。\"",
+    "\"Name or rename the current session.\"": "\"命名或重命名当前会话。\"",
+    "\"New session name (omit to see a suggestion)\"": "\"新会话名称（省略则显示建议）\"",
+    "\"Set exec defaults for this session.\"": "\"设置此会话的 exec 默认值。\"",
+    "\"Model id; add -s for session, -a for agent, or -g for global scope\"": "\"模型 ID；添加 -s 表示会话、-a 表示代理、-g 表示全局范围\""
   }
 }

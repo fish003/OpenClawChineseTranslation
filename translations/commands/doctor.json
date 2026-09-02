@@ -14,6 +14,17 @@
     "note(\"Gateway token configured.\", \"Gateway auth\")": "note(\"网关令牌已配置。\", \"网关认证\")",
     "note(legacyState.preview.join(\"\\n\"), \"Legacy state detected\")": "note(legacyState.preview.join(\"\\n\"), \"检测到旧版状态\")",
     "note(migrated.changes.join(\"\\n\"), \"Doctor changes\")": "note(migrated.changes.join(\"\\n\"), \"诊断更改\")",
-    "note(migrated.warnings.join(\"\\n\"), \"Doctor warnings\")": "note(migrated.warnings.join(\"\\n\"), \"诊断警告\")"
+    "note(migrated.warnings.join(\"\\n\"), \"Doctor warnings\")": "note(migrated.warnings.join(\"\\n\"), \"诊断警告\")",
+    "\"Pending owners and blockers:\"": "\"待处理所有者和阻塞项：\"",
+    "`${omittedDetailCount} additional pending entries were omitted from this report.`": "`${omittedDetailCount} 个额外待处理条目已从此报告中省略。`",
+    "\"No listed legacy source was removed.\"": "\"未移除任何列出的旧版来源。\"",
+    "'Fix the config errors above, then rerun \"openclaw doctor --fix\".'": "'修复上面的配置错误，然后重新运行 \"openclaw doctor --fix\"。'",
+    "'Resolve the Gateway or cron-store condition above, then rerun \"openclaw doctor --fix\".'": "'解决上面的网关或 cron-store 状态，然后重新运行 \"openclaw doctor --fix\"。'",
+    "\"Legacy state deferred\"": "\"旧版状态已延后\"",
+    "\"Doctor notices\"": "\"诊断提示\"",
+    "message: \"Migrate detected legacy state now?\"": "message: \"现在迁移检测到的旧版状态吗？\"",
+    "`Exec approvals updated: removed ${removedExecApprovals} older generated ${removedExecApprovals === 1 ? \"approval\" : \"approvals\"} that were not tied to a working directory. Manual allowlist rules were not changed. Rerun affected workflows and choose \"Always allow here\" when prompted.`": "`执行审批已更新：移除了 ${removedExecApprovals} 条未绑定工作目录的旧版生成审批。手动 allowlist 规则未更改。重新运行受影响的工作流，并在提示时选择 \"Always allow here\"。`",
+    "note(\"Gateway health will be checked after Doctor repair.\", \"Gateway\")": "note(\"诊断修复后将检查网关健康状态。\", \"网关\")",
+    "\"Gateway health probes skipped because gateway credentials use an exec SecretRef. Run `openclaw doctor --allow-exec` to verify Gateway health with exec SecretRefs.\"": "\"由于网关凭据使用 exec SecretRef，已跳过网关健康探测。运行 `openclaw doctor --allow-exec` 可使用 exec SecretRef 验证网关健康。\""
   }
 }

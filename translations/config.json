@@ -89,8 +89,6 @@
       "commands/commands-models.json",
       "commands/commands-subagents-main.json",
       "commands/commands-subagents-shared.json",
-      "commands/commands-subagents-focus.json",
-      "commands/commands-subagents-unfocus.json",
       "commands/commands-subagents-info.json",
       "commands/commands-subagents-log.json"
     ],
