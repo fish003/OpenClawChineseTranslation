@@ -45,7 +45,6 @@
     "\"Apply the provider's default model recommendation\"": "\"应用提供商的默认模型推荐\"",
     ".description(\"Run a provider CLI to create/sync a token (TTY required)\")": ".description(\"运行提供商 CLI 以创建/同步令牌 (需要 TTY)\")",
     "\"Skip confirmation\"": "\"跳过确认\"",
-    ".description(\"Paste a token into auth-profiles.json and update config\")": ".description(\"将令牌粘贴到 auth-profiles.json 并更新配置\")",
     "\"Provider id (e.g. anthropic)\"": "\"提供商 ID (例如 anthropic)\"",
     "\"Auth profile id (default: <provider>:manual)\"": "\"认证配置 ID (默认: <provider>:manual)\"",
     "\"Optional expiry duration (e.g. 365d, 12h). Stored as absolute expiresAt.\"": "\"可选过期时长 (例如 365d, 12h)。存储为绝对过期时间。\"",
@@ -54,6 +53,19 @@
     ".description(\"Manage per-agent auth profile order overrides\")": ".description(\"管理每代理认证配置顺序覆盖\")",
     "\"Auth profile ids (e.g. anthropic:default)\"": "\"认证配置 ID (例如 anthropic:default)\"",
     "\"Interactive auth helper (provider auth or paste token)\"": "\"交互式认证助手（提供商认证或粘贴令牌）\"",
-    "\"Provider id\"": "\"提供商 ID\""
+    "\"Provider id\"": "\"提供商 ID\"",
+    ".description(\"Refresh the hosted model catalog\")": ".description(\"刷新托管模型目录\")",
+    "\"Output JSON\"": "\"输出 JSON\"",
+    "\"Plain output\"": "\"纯文本输出\"",
+    ".description(\"List saved auth profiles\")": ".description(\"列出已保存的认证配置\")",
+    "\"Agent id (default: configured system agent)\"": "\"代理 ID (默认：已配置的系统代理)\"",
+    "\"Agent id (default: configured default agent)\"": "\"代理 ID (默认：已配置的默认代理)\"",
+    ".description(\"Remove a saved auth profile (see `models auth list` for ids)\")": ".description(\"移除已保存的认证配置（ID 见 `models auth list`）\")",
+    "\"Skip the confirmation prompt\"": "\"跳过确认提示\"",
+    ".description(\"Save a token in an auth profile and update config\")": ".description(\"将令牌保存到认证配置并更新配置\")",
+    ".description(\"Save an API key in an auth profile and update config\")": ".description(\"将 API 密钥保存到认证配置并更新配置\")",
+    ".description(\"Show per-agent auth profile order override\")": ".description(\"显示每代理认证配置顺序覆盖\")",
+    ".description(\"Set per-agent auth profile order override\")": ".description(\"设置每代理认证配置顺序覆盖\")",
+    ".description(\"Clear per-agent auth profile order override\")": ".description(\"清除每代理认证配置顺序覆盖\")"
   }
 }

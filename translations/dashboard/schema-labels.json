@@ -885,6 +885,13 @@
     "  \"plugins.entries.*.llm.allowAgentIdOverride\": \"Allow Plugin LLM Agent Override\"": "  \"plugins.entries.*.llm.allowAgentIdOverride\": \"Allow Plugin LLM 代理 覆盖\"",
     "  \"plugins.entries.*.apiKey\": \"Plugin API Key\"": "  \"plugins.entries.*.apiKey\": \"插件 API 密钥\"",
     "  \"plugins.entries.*.env\": \"Plugin Environment Variables\"": "  \"plugins.entries.*.env\": \"插件 Environment 变量\"",
-    "  \"plugins.entries.*.config\": \"Plugin Config\"": "  \"plugins.entries.*.config\": \"插件 配置\""
+    "  \"plugins.entries.*.config\": \"Plugin Config\"": "  \"plugins.entries.*.config\": \"插件 配置\"",
+    "  worktreeRoot: \"Worktree Root\"": "  worktreeRoot: \"工作树根目录\"",
+    "  \"agents.entries.*.cwd\": \"Agent Working Directory\"": "  \"agents.entries.*.cwd\": \"代理工作目录\"",
+    "  \"tools.web.fetch.ssrfPolicy.blockedHostnames\": \"Web Fetch Blocked Hostnames\"": "  \"tools.web.fetch.ssrfPolicy.blockedHostnames\": \"网页获取阻止主机名\"",
+    "  \"agents.defaults.cwd\": \"Working Directory\"": "  \"agents.defaults.cwd\": \"工作目录\"",
+    "  \"browser.ssrfPolicy.blockedHostnames\": \"Browser Blocked Hostnames\"": "  \"browser.ssrfPolicy.blockedHostnames\": \"浏览器阻止主机名\"",
+    "  \"cron.skipMissedJobs\": \"Skip Missed Recurring Automations\"": "  \"cron.skipMissedJobs\": \"跳过错过的循环自动化\"",
+    "  \"cron.webhookSsrfPolicy.blockedHostnames\": \"Automations Webhook Blocked Hostnames\"": "  \"cron.webhookSsrfPolicy.blockedHostnames\": \"自动化 Webhook 阻止主机名\""
   }
 }
